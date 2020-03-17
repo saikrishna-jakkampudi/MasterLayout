@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/Styles/MyStyle.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body style="background-color:white">
+    <div class="Main">
+        <img src="~/Images/pc.jpg" class="pc"/>
+    </div>
+    <div id="menu" style="position:absolute;top:33%;width:100%">
+        <ul>
+            <li> <a href="#Home">Home</a></li>
+            <li> <a href="#News">News</a></li>
+            <li> <a href="#Contact">Contact</a></li>
+            <li> <a href="#About">About</a></li>
+        </ul>
+    </div>
+    <div class="div2">
+        @RenderBody()
+    </div>
+</body>
+</html>
